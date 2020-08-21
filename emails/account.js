@@ -4,7 +4,7 @@ const mg = require('nodemailer-mailgun-transport');
 const auth = {
     auth: {
         api_key: 'key-03bb7dd2a75ee4b508c959d2b9daf642', //this need to put in environment file but using mailgun it seems difficult
-        domain: 'sandboxcc5953f763114aeba0d083c942575515.mailgun.org'
+        domain: process.env.Domain
     }
 }
 
