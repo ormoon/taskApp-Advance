@@ -1,0 +1,20 @@
+* {
+  font-family: "Comic Sans Ms", "Comic Sans", Cursive;
+}
+.container {
+  margin-top: 50px;
+  background-color: black;
+  border-radius: 1rem;
+  color: aliceblue;
+  padding: 20px;
+  width: 80%;
+}
+
+.container button {
+  margin-left: 47%;
+}
+
+
+.form-row h1{
+    border-bottom: solid 3px indigo;
+}
