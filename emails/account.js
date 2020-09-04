@@ -3,7 +3,7 @@ const mg = require('nodemailer-mailgun-transport');
 
 const auth = {
     auth: {
-        api_key: 'key-03bb7dd2a75ee4b508c959d2b9daf642', //this need to put in environment file but using mailgun it seems difficult
+        api_key: process.env.API_KEY
         domain: process.env.Domain
     }
 }
@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport(mg(auth));
 const sendMail = (email, subject, name, phone, text) => {
     transporter.sendMail({
         from: email,
-        to: 'ormoon.gautam9821@gmail.com', // An array if you have multiple recipients.
+        to: 'xxx.xxxx.com', // An array if you have multiple recipients.
         subject: subject,
         name: name,
         phone: phone,
